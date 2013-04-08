@@ -1,4 +1,5 @@
 /****************************************************
+http://blogs.msdn.com/b/vcblog/archive/2008/10/28/lambdas-auto-and-static-assert-c-0x-features-in-vc10-part-1.aspx
 
      [captures] (params) -> ret {Statments;} 
 
