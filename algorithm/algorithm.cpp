@@ -139,6 +139,17 @@ void example7() {
     print(c);
 }
 
+void example8()
+{
+    int a[] = {1, 2, 2, 4, 5, 3, 1, 7, 7};
+    vector<int> v(begin(a), end(a));
+    std::sort(begin(v), end(v)); // sorting is required or else the duplicated one
+                                 // won't be removed
+    auto iter = unique(begin(v),end(v));
+    v.erase(iter, end(v));
+    print(v);
+}
+
 
 int main(int argc, char* argv[])
 {
@@ -149,6 +160,7 @@ int main(int argc, char* argv[])
     example5();// remove_if
     example6();// new for loop, any_of, none_of, all_of
     example7();// iota
+    example8();// unique
 
     system("PAUSE");
 }
