@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tuple", "tuple\tuple.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "functor", "functor\functor.vcxproj", "{47687862-91EC-48F7-A3B7-2938D6F12144}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rvalue", "rvalue\rvalue.vcxproj", "{D99382D2-1ABB-4EC7-9275-56F35DCFDECC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -43,6 +45,10 @@ Global
 		{47687862-91EC-48F7-A3B7-2938D6F12144}.Debug|Win32.Build.0 = Debug|Win32
 		{47687862-91EC-48F7-A3B7-2938D6F12144}.Release|Win32.ActiveCfg = Release|Win32
 		{47687862-91EC-48F7-A3B7-2938D6F12144}.Release|Win32.Build.0 = Release|Win32
+		{D99382D2-1ABB-4EC7-9275-56F35DCFDECC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D99382D2-1ABB-4EC7-9275-56F35DCFDECC}.Debug|Win32.Build.0 = Debug|Win32
+		{D99382D2-1ABB-4EC7-9275-56F35DCFDECC}.Release|Win32.ActiveCfg = Release|Win32
+		{D99382D2-1ABB-4EC7-9275-56F35DCFDECC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

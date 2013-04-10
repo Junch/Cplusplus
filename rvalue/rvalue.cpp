@@ -7,8 +7,10 @@ http://en.wikipedia.org/wiki/C%2B%2B11#Rvalue_references_and_move_constructors
 ******************************************************************************/
 
 #include <iostream>
+#include <vector>
 
 int main(int argc, char* argv[])
 {
+
 
 }
