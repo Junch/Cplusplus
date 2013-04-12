@@ -132,6 +132,11 @@ void example5()
     static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 }
 
+
+
+
+
+
 int main()
 {
     example1();
