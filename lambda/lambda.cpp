@@ -122,7 +122,7 @@ void printInt(int i)
 
 void other()
 {
-    int a[5] = {1,2,3,4,5};
+    int a[] = {1,2,3,4,5};
     vector<int> la(begin(a), end(a));
     for_each(begin(la),end(la),ptr_fun(printInt));
 }

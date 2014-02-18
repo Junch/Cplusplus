@@ -49,12 +49,9 @@ void ptr3()
 
 struct Foo
 {
-void print(){
-    cout << "Foo::print" << endl;
-}
-~Foo(){
-    cout << "Foo::destruction" << endl;
-}
+    void print(){  cout << "Foo::print\n";}
+    Foo(){cout << "Foo::Foo created\n";}
+    ~Foo(){ cout << "Foo::~Foo destruction\n";}
 };
 
 void ptr4()
@@ -174,6 +171,19 @@ void ptr8()
     cout << "counter sp3:" << sp3.use_count() << endl;
 }
 
+void ptr9()
+{
+    unique_ptr<Foo> p1(new Foo);
+    if(p1) p1->print();
+    {
+        unique_ptr<Foo> p2(std::move(p1));
+        if(p2) p2->print();
+        if(p1) p1->print();
+        p1 = std::move(p2);
+        p1.reset(new Foo);
+        if(p1) p1->print();
+    }
+}
 
 int main()
 {
@@ -184,6 +194,7 @@ int main()
     ptr6();
     //ptr7();
     ptr8();
+    ptr9();
 
     system("Pause");
 }

@@ -1,5 +1,6 @@
 //
 // http://www.radmangames.com/programming/how-to-use-boost-bind
+// http://blog.think-async.com/2010/04/bind-illustrated.html
 //
 
 #include <functional>
@@ -131,11 +132,6 @@ void example5()
     //This following code is assuring that only 32-bit code could be compiled.
     static_assert(sizeof(void *) == 4, "64-bit code generation is not supported.");
 }
-
-
-
-
-
 
 int main()
 {
